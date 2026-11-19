@@ -1,82 +1,89 @@
-# ✕○ Tic-Tac-Toe Ultimate Edition
+# 🐟 Hungry Fish
 
-A modern, responsive, and feature-rich **Tic-Tac-Toe** web game built with pure **HTML5**, **CSS3**, and **Vanilla JavaScript**. Designed with a sleek UI/UX focus, this project was developed as part of the **Computer Graphics and Multimedia System Lab** course.
+**Name:** Mahir Shahriar Mahi
+**Student ID:** 11230321436
+**GitHub:** [Mahi1436](https://github.com/Mahi1436)
+**Course:** Computer Graphics and Multimedia System Lab
 
-## ✨ Key Features
+## About the Game
 
-- 🎮 **Multiple Game Modes:**
-  - **Player vs Player (PvP):** Play locally with a friend on the same device.
-  - **Player vs AI (PvAI):** Challenge **Nova AI** across three difficulty levels (**Easy**, **Medium**, and **Hard**).
-  - **AI vs AI (AIvAI):** Watch two AI agents compete against each other automatically.
+Hungry Fish is a real-time underwater game drawn on an HTML5 canvas. You control a small fish: **eat the smaller green fish to grow bigger** and avoid the bigger red fish that can eat you. You have 3 lives, and the game gets faster every level. How high can you score?
 
-- 🧠 **Smart AI Engine:**
-  - **Easy:** Makes randomized moves for casual play.
-  - **Medium:** Uses strategic heuristics (winning moves, blocking opponent, center/corner control).
-  - **Hard:** Powered by the **Minimax Algorithm**, making the AI virtually unbeatable.
+## How to Play
 
-- 🎨 **Modern UI & Theme Customization:**
-  - Seamless toggle between **Dark Mode** and **Light Mode**.
-  - Custom player name inputs for personalized gameplay.
-  - Smooth CSS transitions, glowing neon accents, and celebratory **Confetti Animations** upon winning.
+| Control | Action |
+|---|---|
+| Mouse / touch | Your fish swims towards the pointer |
+| `W` `A` `S` `D` or arrow keys | Swim up / left / down / right |
+| `Enter` | Start / restart |
+| `P` or `Space` | Pause / resume |
+| `R` | Restart |
+| `Esc` | Back to the menu |
+| `M` | Sound on / off |
 
-- 📊 **Real-Time Statistics & Match History:**
-  - Tracks total games played, X win rate percentage, best winning streak, and move counts.
-  - Keeps a log of recent completed matches using browser `localStorage` so data persists across sessions.
+**Rules**
+- 🟢 **Green fish** are smaller than you: touch them to eat them (**+10 points**) and grow a little.
+- 🔴 **Red angry fish** are bigger than you: touching one costs **1 life**.
+- You have **3 lives**. When they are gone, the game is over.
+- Every **100 points** you reach a new level and the fish swim faster.
 
-- 🔊 **Interactive Controls & Audio:**
-  - Built-in synthesized sound effects using the **Web Audio API** (no external audio files required).
-  - **Undo Move** functionality to revert mistakes.
-  - Instant round restart and score reset options.
+## Features
 
-- 📱 **Fully Responsive Design:**
-  - Optimized for desktop, tablet, and mobile viewports using CSS Grid and Flexbox.
+- Real-time graphics drawn on an HTML5 **canvas** (animated ocean, light rays, swaying seaweed, rising bubbles)
+- Player-controlled fish (mouse, touch and keyboard)
+- **Moving objects:** enemy fish swim across the screen with a wavy motion and wiggling tails
+- **Collision detection** (circle vs circle) between the player and every fish
+- **Eat-or-be-eaten rule:** fish change colour (green / red) depending on whether they are smaller or bigger than you
+- Player grows every time it eats a fish
+- Live **score**, **level**, **best score** and **lives** (fish icons) on screen
+- **Levels:** faster fish, faster spawning and more dangerous fish as you score
+- 3 lives, with a short protection time (blinking) and screen shake after being hit
+- **Game-over screen** showing the final score, fish eaten and high score
+- **High score saved** in the browser (`localStorage`)
+- **Start menu**, **pause**, **restart** and **quit to menu**
+- **Sound effects** (Web Audio API) with a sound on/off toggle
+- Particle effects when eating and floating "+10" popups
+- Fully responsive: works on desktop and mobile (touch controls)
+- Single-file project, no libraries or installation needed
 
-## 🛠️ Technologies Used
+## Screenshots
 
-- **HTML5:** Semantic structure and ARIA labels for the board and controls.
-- **CSS3:** Custom CSS Variables (`:root`), Grid/Flexbox layouts, keyframe animations, and responsive media queries.
-- **JavaScript (ES6+):** DOM manipulation, game state management, Minimax AI algorithm, Web Audio API, and `localStorage` integration.
+| Start menu | Gameplay |
+|---|---|
+| ![Start menu](screenshots/menu.png) | ![Gameplay](screenshots/gameplay.png) |
 
-## 🎯 How to Play
+| Level up | Game over |
+|---|---|
+| ![Level up](screenshots/level-up.png) | ![Game over](screenshots/game-over.png) |
 
-1. Choose a game mode: Player vs Player, Player vs AI, or AI vs AI.
-2. Enter player names (optional) and pick an AI difficulty if playing against the AI.
-3. Click a cell to place your symbol. Get three in a row, column, or diagonal to win!
+## Technologies Used
 
-## 🚀 How to Run Locally
+- **HTML5:** `<canvas>` element for the game area, buttons and information cards
+- **CSS3:** custom properties (`:root`), Grid/Flexbox layout and responsive media queries
+- **JavaScript (ES6+):** Canvas 2D API, game loop with `requestAnimationFrame`, collision detection, Web Audio API and `localStorage`
 
-Since this project is built as a self-contained single-file web application, no external dependencies or build tools are required.
+## How to Run Locally
 
-1. **Clone or Download the Repository:**
+1. Clone the repository:
    ```bash
-   git clone https://github.com/Mahi1436/tic-tac-toe-ultimate.git
+   git clone https://github.com/Mahi1436/Hungry-Fish.git
    ```
-
-2. **Navigate to the Project Folder:**
+2. Open the project folder:
    ```bash
-   cd tic-tac-toe-ultimate
+   cd Hungry-Fish
    ```
+3. Double-click `index.html` to play in any modern browser (Chrome, Edge, Firefox, Safari), or use the **Live Server** extension in VS Code.
 
-3. **Launch the Game:**
-   - Simply **double-click** on the `index.html` file to open it in any modern web browser (Chrome, Edge, Firefox, Safari).
-   - *Optional:* Open the folder in VS Code and run it using the **Live Server** extension.
-
-## 📂 Project Structure
+## Project Structure
 
 ```
-tic-tac-toe-ultimate/
+Hungry-Fish/
 │
-├── index.html      # Complete game (HTML structure, CSS styling, and JS logic)
-└── README.md       # Project documentation
+├── index.html        # Complete game (HTML, CSS and JavaScript)
+├── README.md         # Project documentation
+└── screenshots/      # Screenshots used in this README
 ```
 
-## 🎓 Academic Context
+## License
 
-- **Developed by:** Mahir Shahriar Mahi
-- **GitHub:** [Mahi1436](https://github.com/Mahi1436)
-- **Course:** Computer Graphics and Multimedia System Lab
-- **Project Focus:** Visual hierarchy, color theory (dark/light palettes), responsive grid layout, interactive micro-animations, and clean user interface design.
-
-## 📝 License
-
-This project is open-source and created for educational purposes by Mahir Shahriar Mahi. Feel free to explore, modify, and use it!
+This project is open-source and created for educational purposes by Mahir Shahriar Mahi. Feel free to explore, modify and use it!
