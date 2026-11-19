@@ -47,14 +47,7 @@ Hungry Fish is a real-time underwater game drawn on an HTML5 canvas. You control
 - Single-file project, no libraries or installation needed
 
 ## Screenshots
-
-| Start menu | Gameplay |
-|---|---|
-| ![Start menu](screenshots/menu.png) | ![Gameplay](screenshots/gameplay.png) |
-
-| Level up | Game over |
-|---|---|
-| ![Level up](screenshots/level-up.png) | ![Game over](screenshots/game-over.png) |
+- Screenshots will be attached later when the game will be fully developed
 
 ## Technologies Used
 
